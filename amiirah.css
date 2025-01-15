@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    
+}
+section::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./album\ amirah.jpg);
+    background-position: center;
+    background-size: inherit;
+    color: bisque;
+    filter: blur(2px);
+    z-index: -1;
+    filter: brightness(30%);
+}
+header {
+    background: #111;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+    color: antiquewhite;
+    transition: .2s;
+    z-index: 1;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+color: #f39c12;
+border-bottom: 2px solid#f31212;
+color: teal;
+border-bottom: 4px solid teal;
+}
+html{
+    scroll-behavior: smooth;
+}
+section div{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+section div figure{
+    width: 90%;
+    flex-grow: 1;
+    margin-bottom: 40px;
+    position: relative;
+    transition: all .4s;
+   
+}
+
+section div img{
+    width: 500;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0 30px;
+    border-radius: 0 35px;
+    border: 2px solid whitesmoke;
+}
+section div figcaption{
+    position: absolute;
+    bottom: -10px;
+    background: wheat;
+border-radius: 5px;
+padding: 10px;
+left: 50%;
+transform: translateX(-50%);
+width: 30%;
+color: black;
+}
+section div img:hover{
+    filter: grayscale(100);
+    scale: 1.02;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+.biopic img{
+    height: 500px;
+    width: 500x;
+    border-radius: 20px;
+}
+.gallery img {
+    width: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media(max-width:768px){
+    .size{
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .size{
+        width: 80%;
+    }
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+form button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #333;
+}
+
+footer {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.performance-video iframe,
+.performance-image img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+/* Initial hidden state for album info */
+.hidden-content {
+    display: none;
+}
+
+/* Styling for links */
+#album-info ul li a {
+    text-decoration: none;  /* Remove text decoration by default */
+    color: white;  /* Link text color */
+    display: block;
+    padding: 10px 0;
+    size: 10px;
+}
+
+#album-info ul li:hover{
+    
+}
+/* Hover effect for links */
+#album-info ul li a:hover {
+    color: red;  /* Change color on hover */
+    text-decoration: underline;  /* Underline on hover */
+    text-size-adjust: 20px;
+}
+
+/* Show album info when the parent image is clicked */
+#album-art-figure.clicked + #album-info {
+    display: block;  /* Show the album tracklist */
+}
+
+/* Optional: Add any other styles as needed for layout or design */
+/* Initial hidden state for album info */
+.hidden-content {
+    display: none;
+}
+
+/* Style for album info (tracklist area) */
+#album-info {
+    background-color: rgba(0, 0, 0, 0.6);  /* Background color for tracklist */
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+/* Hover effect for the tracklist container */
+#album-info:hover {
+    background-color: black;  /* Change background color when hovered */
+    border-radius: 20px;
+}
+
+/* Styling for links */
+#album-info ul li a {
+    text-decoration: none;  /* Remove text decoration by default */
+    color: whitesmoke;  /* Link text color */
+    display: block;
+    padding: 30px 0;
+}
+
+/* Hover effect for links */
+#album-info ul li a:hover {
+    color: #f00;  /* Change color on hover */
+    text-decoration: underline;  /* Underline on hover */
+}
+
+/* Show album info when the parent image is clicked */
+#album-art-figure.clicked + #album-info {
+    display: block;  /* Show the album tracklist */
+}
+
+/* Optional: Add any other styles as needed for layout or design */
